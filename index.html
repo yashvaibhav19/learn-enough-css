@@ -4,12 +4,29 @@
     <title>Test Page: Don't Panic</title>
     <meta charset="utf-8">
     <style>
-      div {
+      h2 {
+        font-size: 2em;
+      }
+      .big-boxes div {
         border: 1px solid black;
         color: green;
+        height: 25vh;
       }
       #first-link {
         background-color: lightslategray;
+      }
+      .top-links {
+        color: rgba(255,0,255,0.23);
+      }
+      .big-boxes {
+        align-items: center;
+        width: 50vw;
+        height: 50vh;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     </style>
   </head>
@@ -17,27 +34,29 @@
     <h1>I'm an h1</h1>
     <ul>
       <li>
-        <a href="https://example.com/" style="color: red;">Link</a>
+        <a href="https://example.com/" class="top-links">Link</a>
       </li>
       <li>
-        <a href="https://example.com/" style="color: red;">Link</a>
+        <a href="https://example.com/" class="top-links">Link</a>
       </li>
       <li>
-        <a href="https://example.com/" style="color: red;">Link</a>
+        <a href="https://example.com/" class="top-links">Link</a>
       </li>
     </ul>
     <h2>I'm an h2</h2>
-    <div id="first-link">
-      <a href="https://example.com/">I'm a link</a>
-    </div>
-    <div>
-      <a href="https://example.com/">I'm a link</a>
-    </div>
-    <div>
-      <a href="https://example.com/">I'm a link</a>
-    </div>
-    <div>
-      <a href="https://example.com/">I'm a link</a>
+    <div class="big-boxes">
+      <div id="first-link">
+        <a href="https://example.com/">I'm a link</a>
+      </div>
+      <div>
+        <a href="https://example.com/">I'm a link</a>
+      </div>
+      <div>
+        <a href="https://example.com/">I'm a link</a>
+      </div>
+      <div>
+        <a href="https://example.com/">I'm a link</a>
+      </div>
     </div>
   </body>
 </html>
