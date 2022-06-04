@@ -36,6 +36,7 @@
 
       .bio-box {
         border: 1px solid #000;
+        box-sizing: border-box;
         width: 25vw;
         font-size: 1em;
         padding: 2%;
@@ -45,23 +46,6 @@
       .bio-copy a {
         color: green;
       }
-
-      /* Test Features*/
-      .test-box {
-        background: #9db6dd;
-        /* display: inline-block; */
-        margin: 50px;
-        /* width: 200px; */
-      }
-      .test-box-nosizing {
-        border: 10px solid #000;
-        padding: 40px;
-      }
-      .test-box-sizing {
-        box-sizing: border-box;
-        /* display: block; */
-        /* width: auto; */
-      }
       .container {
         border: 2px solid black;
         background-color: rgb(240, 202, 202);
@@ -69,6 +53,19 @@
         padding: 10px;
         width: 50vw;
         font-family: 'Ubuntu', sans-serif;
+      }
+
+      /* Shapes */
+      .circle {
+        width: 30vw;
+        height: 30vw;
+        border: 1px solid black;
+        margin: 12px auto;
+        border-radius: 15vw;
+        font-family: 'Ubuntu';
+        box-sizing: border-box;
+        text-align: center;
+        padding: 12vw 0 0 0;
       }
     </style>
   </head>
@@ -127,6 +124,10 @@
         <h3>??</h3>
         <p> The Future </p>
       </div>
+      <p style="clear: both;">This is going to get very weird</p>
+    </div>
+    <div class="circle">
+      <strong>How is the Josh</strong>
     </div>
   </body>
 </html>
